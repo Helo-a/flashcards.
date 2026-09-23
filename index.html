@@ -1,63 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Flashcards</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Fato ou Fake?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-   <h1>Flashcards</h1>
-   <nav>
-       <a href="#">Início</a>
-   </nav>
-   <img src= "" alt="imagem-logotipo">
+    <h1>Flashcards</h1>
+    <nav>
+        <a href="#">Início</a>
+    </nav>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Portrait_of_Marie_Curie_and_Pierre_Curie.jpg" alt="Logotipo Marie e Pierre Curie">
 </header>
+
 <main>
-   <h2>Descubra a verdade passando o mouse</h2>
-   <p>Fato ou Fake?</p>
-   <article>
-<div>
-          <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Cow%2C_breed_Gir_in_Balacan%2C_Mexico.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="imagem-vaquinha">
-            <p>Mais de 16 milhões de pessoas nos EUA pensam que achocolatado vem de vacas marrons, fato ou fake?</p>
-            </div>
-            <div>
-            <img src="https://share.google/6AIxGaP7KQGKmTx1y" alt="imagem-paisagem">
-           <p>FAKE</p>
-          </div>
-           <div>
- <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/ManCity20240722-031_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Haaland">
-            <p>O Brasil ganhou da Noruega na Copa 2026?</p>
-            </div>
-            <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="imagem-paisagem">
-           <p>Misturar limão e bicarbonato não cura vírus.</p>
-          </div>
-          <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="imagem-paisagem">
-            <p>Golpistas usam IA para imitar vozes de parentes pedindo dinheiro. Fato ou Fake?</p>
-            </div>
-            <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Retratos_do_Meio_Dia_-_Flickr_-_marcodede.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="imagem-paisagem">
-           <p>FATO</p>
-          </div>
-          <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="imagem-paisagem">
-            <p>A ONU confirmou que o último ano foi o mais quente da história. </p>
-            </div>
-            <div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="imagem-paisagem">
-           <p>O último ano foi o mais quente já registrado na história.</p>
-          </div>
-       </div>   
-    </article>
+    <h2>Descubra a verdade passando o mouse</h2>
+    <p>Fato ou Fake?</p>
+
+    <section class="cards-container">
+        
+        <!-- Flashcard 1 -->
+        <article class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Ir%C3%A8ne%2C_Marie_et_%C3%88ve_Curie.jpg/960px-Ir%C3%A8ne%2C_Marie_et_%C3%88ve_Curie.jpg" alt="Ilustração">
+                    <p>Mais de 16 milhões de pessoas nos EUA pensam que achocolatado vem de vacas marrons. Fato ou fake?</p>
+                </div>
+                <div class="card-back">
+                    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Ir%C3%A8ne%2C_Marie_et_%C3%88ve_Curie.jpg/960px-Ir%C3%A8ne%2C_Marie_et_%C3%88ve_Curie.jpg" alt="Ilustração">
+                    <p><strong>FATO:</strong> Segundo pesquisas nos EUA, cerca de 7% da população adulta acredita nessa afirmação.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Flashcard 2 -->
+        <article class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="Paisagem">
+                    <p>Misturar limão e bicarbonato cura vírus em 24 horas?</p>
+                </div>
+                <div class="card-back">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="Paisagem">
+                    <p><strong>FAKE:</strong> Misturar limão e bicarbonato não cura vírus.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Flashcard 3 -->
+        <article class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="Paisagem">
+                    <p>Golpistas usam IA para imitar vozes de parentes pedindo dinheiro. Fato ou Fake?</p>
+                </div>
+                <div class="card-back">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="Paisagem">
+                    <p><strong>FATO:</strong> A clonagem de voz por Inteligência Artificial é uma técnica utilizada em fraudes financeiras.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Flashcard 4 -->
+        <article class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="Paisagem">
+                    <p>A ONU confirmou que o último ano foi o mais quente da história.</p>
+                </div>
+                <div class="card-back">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Large_cloud_over_Mexican_landscape.jpg/960px-Large_cloud_over_Mexican_landscape.jpg" alt="Paisagem">
+                    <p><strong>FATO:</strong> Organizações meteorológicas e a ONU confirmaram recordes mundiais de temperatura.</p>
+                </div>
+            </div>
+        </article>
+
+    </section>
 </main>
-</footer class= "rodapé">
-<a href="https://github.com/"></a>
-<a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"></a>
-<a href="link inserir"
-<img src = "https://www.google.com/search?sca_esv=cc50536f56285548&rlz=1CAXXPU_enBR1232&sxsrf=APpeQnvVVKbmSyVMIML25D_FjjW3TvCNOw:1789567802734&udm=2&fbs=ABfTbFVGaQeaqnsRPI5sOMG32KszkLt6nAp8aiRKj5vMjqZApKYr2wv-EHakX1SS4JF8fY1_A0DfPLoyd61yD2Gjy0hFwA9uQzfe2qr5XIoplX3KzfO3c_7sLxOCnDYHgTrJvlrGWe6rOMcJgKFy1spJmA4CUthlj7crKkiAvZyM7U7MMi_GqZs5eZy6O0X76-A_FmjhD5Nvo-Z__-udOo27E9dlv7aIAw&q=instagram&sa=X&sqi=2&ved=2ahUKEwimu7vJo_OWAxWymZUCHRAFHHgQtKgLegQIIhAB&biw=1300&bih=596&dpr=1.05&safe=active&ssui=on#sv=CAMSURoyKhBlLUY4aGNxT1lHTUp5Yy1NMg5GOGhjcU9ZR01KeWMtTToOLVJaZ1k3M1hyb2FMSk0gBCoXCgFzEhBlLUY4aGNxT1lHTUp5Yy1NGAEwARgHIIrjwrQJSggQARgBIAEoAQ" alt="imagem insta"
+
+<footer>
+    <p>Projeto feito por Luana Stefany De Proença Weiber</p>
+    <div class="social-links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+    </div>
+</footer>
+
 </body>
 </html>
